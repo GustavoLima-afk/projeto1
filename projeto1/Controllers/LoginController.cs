@@ -6,6 +6,13 @@ namespace projeto1.Controllers
 {
     public class LoginController : Controller
     {
+        /*construtor*/
+        private readonly UsuarioRepositorio _usuarioRepositorio;
+
+        public LoginController(UsuarioRepositorio usuarioRepositorio)
+        {
+            _usuarioRepositorio = usuarioRepositorio;
+        }
         public IActionResult Login()
         {
             return View();
