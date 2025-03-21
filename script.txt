@@ -1,0 +1,16 @@
+-- Criando o baco de dados
+create database dbsys;
+
+-- Usando o banco de dados 
+use dbsys;
+
+-- Criando as tabelas do bancos
+create table Usuari(
+Id int primary key auto_increment,
+NOME varchar (50) not null,
+Email varchar (50) not null,
+Senha varchar (50) not null
+); 
+
+-- Consultando a(s) tabelas (s) do banco
+select * from Usuario;
