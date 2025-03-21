@@ -4,7 +4,7 @@ using System.Data;
 
 namespace projeto1.Repositorio
 {
-    public class Conexao
+    public class Conexao: IDisposable
     {
         private MySqlConnection _connection;
 
